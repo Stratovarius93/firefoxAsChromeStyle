@@ -1,0 +1,57 @@
+
+  /* Curve active tab and slightly overlap neighboring tabs */
+  .tabbrowser-tab .tab-background[selected="true"] {
+    margin-left: -3px !important;
+    margin-right: -3px !important;
+    border-top: 1px solid rgba(0,0,0,0.0) !important;
+    border-left: 1px solid rgba(0,0,0,0.0) !important;
+    border-right: 1px solid rgba(0,0,0,0.0) !important;
+    border-radius: 3px 3px 0px 0px / 6px 6px 0px 0px !important;
+    
+  }
+
+  /* Shorten the tab line along the tops of tabs */
+  .tab-line {
+    /*margin-left: 9px !important;
+    margin-right: 9px !important;*/
+    display: none !important;
+  }
+  /* Shorten the vertical lines between background tabs */
+  .tabbrowser-tab::before, .tabbrowser-tab::after {
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    border: 1px solid rgba(0,0,0,.1) !important;
+  }
+  
+  /** "Light" Theme (Dark Text) **/
+  
+  /* Border the background tabs (10% gray) for greater visibility */
+  #main-window:not([lwthemetextcolor="bright"]) .tabbrowser-tab:not([selected="true"]) {
+    /*border: 1px solid rgba(0,0,0,.1) !important;*/
+    /*border-bottom-color: transparent !important;*/
+    /*margin-right: 0px !important;*/
+  }
+
+#nav-bar {
+  box-shadow: none !important;
+}
+
+#urlbar:not([focused="true"]):-moz-lwtheme > #urlbar-background, #navigator-toolbox #searchbar:not(:focus-within):-moz-lwtheme{
+  background-color: #e7e7e7 !important;
+  border-radius: 16px !important;;
+  border-color: #ffffff !important;;
+}
+
+#PanelUI-menu-button {
+    list-style-image: url("chrome://global/skin/icons/settings.svg") !important;
+}
+
+/*.tab-background {
+    background-clip: border-box;
+    border: none !important;
+    margin: 0 15px !important;
+    -webkit-transform: perspective(100px) rotateX(30deg) !important;
+    -moz-transform: perspective(100px) rotateX(30deg) !important;
+    outline: none !important;
+    border-radius: 4px 4px 0 0;
+  }*/
